@@ -3,12 +3,12 @@ cask "speakclaw" do
 
   on_arm do
     url "https://speakclaw-releases.s3.eu-west-1.amazonaws.com/desktop/v#{version}/SpeakClaw_#{version}_aarch64.dmg"
-    sha256 "5ef1fab2c41aec3aca9f892dbe700dfdaa332c1cf8ddec770fc2277da84f505e"
+    sha256 "d3a6fb365e5a758c6f618b8622b0f7d6213f28a05d264420e8980885e410ef9d"
   end
 
   on_intel do
     url "https://speakclaw-releases.s3.eu-west-1.amazonaws.com/desktop/v#{version}/SpeakClaw_#{version}_x64.dmg"
-    sha256 "d60b773fdda908a176b7b85090d2f10cbd3b90285aeabfee09fef4c744194898"
+    sha256 "61b4601b1db9036bcb736661b9ec4e499f70b6c4e605ceb20c9b0fc5d7e512a0"
   end
 
   name "SpeakClaw"
