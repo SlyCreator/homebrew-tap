@@ -1,8 +1,8 @@
 cask "speakclaw" do
-  version "1.0.2"
+  version "1.0.3"
 
   url "https://speakclaw-releases.s3.eu-west-1.amazonaws.com/desktop/v#{version}/SpeakClaw_#{version}_aarch64.dmg"
-  sha256 "eab983eddeb74eba91785bb9c80f97eaf03b96bf30947a488a55132333589c05"
+  sha256 "6d41f7bea2707acfcbfa2a4330e144eb3353806839407cbbf6b4eacaec7afa18"
 
   depends_on arch: :arm64
 
