@@ -1,9 +1,9 @@
 cask "speakclaw" do
-  version "1.0.1"
+  version "1.0.2"
 
   on_arm do
     url "https://speakclaw-releases.s3.eu-west-1.amazonaws.com/desktop/v#{version}/SpeakClaw_#{version}_aarch64.dmg"
-    sha256 "02b50f33a12b4c767193ba40a7c4c74d42266ac8178863a9d28232fd311501e5"
+    sha256 "eab983eddeb74eba91785bb9c80f97eaf03b96bf30947a488a55132333589c05"
   end
 
   on_intel do
