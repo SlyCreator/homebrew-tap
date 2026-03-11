@@ -1,7 +1,7 @@
 cask "netvow" do
   version "0.1.0"
 
-  url "https://github.com/SlyCreator/NetVow/releases/download/v#{version}/NetVow_#{version}_aarch64.dmg"
+  url "https://github.com/SlyCreator/homebrew-tap/releases/download/netvow-v#{version}/NetVow_#{version}_aarch64.dmg"
   sha256 "965ca44411566efab2bb38aa307a872e4463fe537baea6926a9da06288183529"
 
   depends_on arch: :arm64

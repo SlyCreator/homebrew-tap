@@ -2,15 +2,36 @@ name: Update Cask
 
 on:
   repository_dispatch:
-    types: [update-cask]
+    types: [update-netvow-cask]
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Update netvow cask
+      - name: Upload DMG to tap releases
+        run: |
+          VERSION="${{ github.event.client_payload.version }}"
+          ARM_FILE="${{ github.event.client_payload.arm_file }}"
+          ARM_URL="${{ github.event.client_payload.arm_url }}"
+
+          # Download the DMG from NetVow CI artifacts (passed via payload URL)
+          curl -L "$ARM_URL" -o "$ARM_FILE"
+
+          # Create release on this tap repo
+          gh release create "netvow-v$VERSION" "$ARM_FILE" \
+            --title "NetVow v$VERSION" \
+            --notes "NetVow v$VERSION release assets." \
+            --repo SlyCreator/homebrew-tap || \
+          gh release upload "netvow-v$VERSION" "$ARM_FILE" \
+            --repo SlyCreator/homebrew-tap --clobber
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update cask version and sha
         run: |
           VERSION="${{ github.event.client_payload.version }}"
           ARM_SHA="${{ github.event.client_payload.arm_sha }}"
