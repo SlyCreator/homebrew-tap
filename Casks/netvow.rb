@@ -1,21 +1,16 @@
 cask "netvow" do
   version "0.1.0"
 
-  on_arm do
-    url "https://github.com/SlyCreator/NetVow/releases/download/v#{version}/NetVow_#{version}_aarch64.dmg"
-    sha256 "965ca44411566efab2bb38aa307a872e4463fe537baea6926a9da06288183529"
-  end
+  url "https://github.com/SlyCreator/NetVow/releases/download/v#{version}/NetVow_#{version}_aarch64.dmg"
+  sha256 "965ca44411566efab2bb38aa307a872e4463fe537baea6926a9da06288183529"
 
-  on_intel do
-    url "https://github.com/SlyCreator/NetVow/releases/download/v#{version}/NetVow_#{version}_aarch64.dmg"
-    sha256 "965ca44411566efab2bb38aa307a872e4463fe537baea6926a9da06288183529"
-  end
+  depends_on arch: :arm64
 
   name "NetVow"
   desc "OS-level website blocker for focus and accountability"
   homepage "https://github.com/SlyCreator/NetVow"
 
-  depends_on macos: ">= :catalina"
+  depends_on macos: ">= :ventura"
 
   app "NetVow.app"
 
@@ -29,5 +24,6 @@ cask "netvow" do
     "~/Library/Application Support/com.netvow.desktop",
     "~/Library/Caches/com.netvow.desktop",
     "~/Library/Preferences/com.netvow.desktop.plist",
+    "/etc/sudoers.d/netvow",
   ]
 end
