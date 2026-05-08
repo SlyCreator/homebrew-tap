@@ -1,8 +1,8 @@
 cask "groundkube" do
   version "0.1.0"
 
-  url "https://github.com/SlyCreator/groundkube-desktop/releases/download/v#{version}/GroundKube_#{version}_aarch64.dmg"
-  sha256 "placeholder_updated_on_release"
+  url "https://downloads.grindkube.com/releases/v0.1.0/GroundKube_0.1.0_aarch64.dmg"
+  sha256 "cac6041910966ea7daf0331dbd1486fd470a94081df2343f027b0acfa762ff06"
 
   depends_on arch: :arm64
 
