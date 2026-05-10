@@ -1,8 +1,8 @@
 cask "groundkube" do
-  version "0.1.0"
+  version "0.2.0"
 
-  url "https://downloads.grindkube.com/releases/v0.1.0/GroundKube_0.1.0_aarch64.dmg"
-  sha256 "cac6041910966ea7daf0331dbd1486fd470a94081df2343f027b0acfa762ff06"
+  url "https://downloads.grindkube.com/releases/v0.2.0/GroundKube_0.2.0_aarch64.dmg"
+  sha256 "a14b047228dd399e44dc4b8aac107c599c9364741dfbe65ac98ceaa5f6552939"
 
   depends_on arch: :arm64
 
