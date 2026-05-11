@@ -21,8 +21,8 @@ cask "grindkube" do
   end
 
   zap trash: [
-    "~/Library/Application Support/dev.groundkube.app",
-    "~/Library/Caches/dev.groundkube.app",
-    "~/Library/Preferences/dev.groundkube.app.plist",
+    "~/Library/Application Support/dev.grindkube.app",
+    "~/Library/Caches/dev.grindkube.app",
+    "~/Library/Preferences/dev.grindkube.app.plist",
   ]
 end
