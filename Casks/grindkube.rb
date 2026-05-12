@@ -1,8 +1,8 @@
 cask "grindkube" do
-  version "0.2.9"
+  version "0.3.0"
 
-  url "https://downloads.grindkube.com/releases/v0.2.9/GrindKube_0.2.9_aarch64.dmg"
-  sha256 "a4ee9836e6825110c6e4eaeb0ea4701905fcb9409533847d001839812ff6ba83"
+  url "https://downloads.grindkube.com/releases/v0.3.0/GrindKube_0.3.0_aarch64.dmg"
+  sha256 "664bde26032b3c455d02b8dc34e4d1b031b50d2ab5ee13bb8c231dadc7a48b4d"
 
   depends_on arch: :arm64
 
