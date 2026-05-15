@@ -42,11 +42,27 @@ brew install --cask netvow
 
 ---
 
+### GrindKube
+Local Kubernetes practice labs — no cloud, no session limits.
+
+```bash
+brew install --cask slycreator/tap/grindkube
+```
+
+| | |
+|---|---|
+| **Version** | 0.3.9 |
+| **Requires** | macOS Ventura or later, Apple Silicon |
+| **Homepage** | https://grindkube.com |
+
+---
+
 ## Update
 
 ```bash
 brew upgrade --cask speakclaw
 brew upgrade --cask netvow
+brew upgrade --cask grindkube
 ```
 
 ## Uninstall
@@ -54,4 +70,5 @@ brew upgrade --cask netvow
 ```bash
 brew uninstall --cask speakclaw
 brew uninstall --cask netvow
+brew uninstall --cask grindkube
 ```
