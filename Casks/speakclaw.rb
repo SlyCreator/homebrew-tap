@@ -1,13 +1,13 @@
 cask "speakclaw" do
-  version "1.1.0"
+  version "1.1.1"
 
   on_arm do
-    sha256 "417d3c14f393faa606a731a558b90b48e0011b7e863812ad39b396e1566c38f0"
+    sha256 "b6775ef721b4ed4083830f26d6c459e35d7c408faf9a3cf6c226542cc6fac2a5"
 
     url "https://speakclaw-desktop-downloads.s3.us-east-1.amazonaws.com/desktop/v#{version}/SpeakClaw_#{version}_aarch64.dmg"
   end
   on_intel do
-    sha256 "3245e0fe2d5e3bfb0b04a95c25cee8c9314731ff563d9eca6db5b73897b117cb"
+    sha256 "a053776088486b769b8b8c569986bf39ecbf5e147d6bc8edc596ab08f427dbd2"
 
     url "https://speakclaw-desktop-downloads.s3.us-east-1.amazonaws.com/desktop/v#{version}/SpeakClaw_#{version}_x64.dmg"
   end
